@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Set 02</title>
+</head>
+<body>
+  <script>
+    // //q1. Use logical opertors to find whether the age of a person is between 10 & 20
+
+    let age = prompt("What is your age?");
+    age=Number.parseInt(age);
+
+    if (age>10 && age <20){
+      console.log("You are age between 10 & 20");
+    }
+    else{
+      console.log("Your age is not between 10 & 20")
+    }
+    
+    //q2. Demonstrate a example using switch case
+
+   
+  let day = prompt("Enter the week number");
+  
+  
+    switch(day){
+      case "0":
+        console.log("You are born on Sunday");
+        break;
+
+      case "1":
+        console.log("You are born on Monaday");
+        break;
+
+      case "2":
+        console.log("You are born on Tuesday");
+        break;
+
+      case "3":
+        console.log("You are born on Wednesday");
+        break;
+
+      case "4":
+        console.log("You are born on Thursday");
+        break;
+
+      case "5":
+        console.log("You are born on Friday");
+        break;
+
+      case "6":
+        console.log("You are born on Saturday");
+        break;
+     
+      default:
+          console.log("Invalid Input");
+          break;
+
+    }
+
+
+    //q3. Write a java script program to find whether a number is divisible by 2 and 3
+    let num=prompt("Enter the number");
+    num=Number.parseInt(num);
+    if(num%2==0 && num%3==0){
+      console.log("The number is divisible by 2 and 3 ");
+    }
+    
+    else{
+      console.log("The number is not divisible by 2 and 3");
+    }
+
+
+    
+    //q4. Write a java script program to find whether a number is divisible by 2 and 3
+    let number=prompt("Enter the number");
+    number=Number.parseInt(number);
+    if(number%2==0 || number%3==0){
+      console.log("The number is divisible by 2 or 3 ");
+    }
+    
+    else{
+      console.log("The number is not divisible by 2 or 3");
+    }
+
+    //q5. Using ternary operator write a program  to find you can drive or cannot drive based on age above 18
+
+    let age = prompt("Enter the age");
+    age=Number.parseInt(age);
+    let a =age>18 ? "you can drive": "You cannot drive";
+    console.log(a);
+  </script>
+</body>
+</html>
